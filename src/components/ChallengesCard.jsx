@@ -85,7 +85,7 @@ const ChallengesCard = ({ challenge }) => {
   }
 
   return (
-    <div onClick={() => navigate(`/challengesoverview/${challenge.id}`)} className='w-1/4 h-full rounded-2xl bg-white text-black flex flex-col cursor-pointer'>
+    <div onClick={() => navigate(`/challengesoverview/${challenge.id}`)} className='w-11/12 md:w-1/4 h-full rounded-2xl bg-white text-black flex flex-col cursor-pointer'>
       <img
         src={imgSrc}
         alt={challenge.title}

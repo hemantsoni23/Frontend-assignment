@@ -123,7 +123,7 @@ const ExploreChallenges = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-          <div className='relative ml-8'>
+          <div className='relative ml-0 mt-2 md:mt-0 md:ml-8'>
             <button
               onClick={() => setIsFilterOpen(!isFilterOpen)}
               className='w-full sm:w-auto px-4 py-3 bg-white text-gray-700 rounded-lg flex items-center justify-center transition-all duration-300 ease-in-out transform hover:scale-105'
