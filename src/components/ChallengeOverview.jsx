@@ -99,7 +99,7 @@ const ChallengeOverview = () => {
       </div>
 
       <div className='w-full h-[10%] shadow-xl flex justify-center items-center'>
-        <div className='w-3/4 ml-40'>
+        <div className='w-3/5 md:w-3/4 ml-1/4 md:ml-40'>
           <div className='w-fit h-full py-4 text-lg font-bold border-b-4 border-[#44924c]'>Overview</div>
         </div>
         <div className='w-1/4'>

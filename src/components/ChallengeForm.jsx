@@ -129,7 +129,7 @@ const ChallengeForm = () => {
             name='title' 
             value={challenge.title} 
             onChange={handleChange} 
-            className='w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500' 
+            className='w-3/4 md:w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500' 
             required 
           />
         </div>
@@ -143,7 +143,7 @@ const ChallengeForm = () => {
             name='startDate' 
             value={challenge.startDate} 
             onChange={handleChange} 
-            className='w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 placeholder-slate-400'
+            className='w-3/4 md:w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 placeholder-slate-400'
             placeholder='Add start date'
             onFocus={(e) => (e.target.type = 'date')}
             onBlur={(e) => (e.target.type = 'text')}
@@ -166,7 +166,7 @@ const ChallengeForm = () => {
             name='endDate' 
             value={challenge.endDate} 
             onChange={handleChange} 
-            className='w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 placeholder-slate-400'
+            className='w-3/4 md:w-[55%] p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 placeholder-slate-400'
             placeholder='Add end date'
             onFocus={(e) => (e.target.type = 'date')}
             onBlur={(e) => (e.target.type = 'text')}
@@ -188,7 +188,7 @@ const ChallengeForm = () => {
             name='description' 
             value={challenge.description} 
             onChange={handleChange} 
-            className='w-full p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 resize-none' 
+            className='w-3/4 md:w-full p-2 border-[#b7b7b7] border rounded-md focus:outline-none focus:border-slate-500 resize-none' 
             rows='10' 
             required 
           />
@@ -201,7 +201,7 @@ const ChallengeForm = () => {
             <p className='text-red-500'>Image not found</p>
           ) : challenge.img && !isImageChanged ? (
             <>
-              <div className='bg-[#f8f9fd] rounded-xl p-4 w-[35%]'>  
+              <div className='bg-[#f8f9fd] rounded-xl p-4 w-3/4 md:w-[35%]'>  
                 <img src={challenge.img} alt='Challenge' className='w-full mb-4 rounded-xl' />
                 <button
                   type='button'
@@ -254,7 +254,7 @@ const ChallengeForm = () => {
         {/* Submit Button */}
         <button 
           type='submit' 
-          className='w-3/12 bg-[#44924c] text-white p-3 rounded-lg font-medium hover:bg-green-700 my-8'
+          className='w-3/4 md:w-3/12 bg-[#44924c] text-white p-3 rounded-lg font-medium hover:bg-green-700 my-8'
         >
           {id>0 ? 'Save Changes' : 'Create Challenge'}
         </button>

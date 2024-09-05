@@ -4,8 +4,8 @@ const DeleteModal = ({ isOpen, onClose, onDelete, challengeId }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white rounded-lg shadow-xl w-1/3 p-6">
+    <div className="fixed top-0 -left-10 right-0 bottom-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="bg-white rounded-lg shadow-xl w-3/4 md:w-1/3 p-6">
         <h2 className="text-xl font-semibold mb-4 text-gray-800">Delete Challenge</h2>
         <p className="mb-6 text-gray-600">
           Are you sure you want to delete this challenge? This action cannot be undone.
